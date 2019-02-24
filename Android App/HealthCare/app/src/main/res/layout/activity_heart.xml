@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Heart"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Age -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your age.."
+                            android:paddingLeft="10dp"
+                            android:inputType="numberSigned" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Genders -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sex">
+
+                            <RadioButton
+                                android:id="@+id/rb_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Male"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Female"
+                                android:paddingLeft="10dp" />
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- ChestPain Type -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Chest Pain Type"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cp">
+
+                            <RadioButton
+                                android:id="@+id/rb_cp0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Asymptomatic"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_cp1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Atypical Angina"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_cp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Non-Anginal Pain"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_cp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Typical Angina"
+                                android:paddingLeft="10dp"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Resting Blood Pressure -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resting Blood Pressure"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resting blood pressure is measured while\nyou're in a complete rest position, and is\nmeasured in mm Hg"
+                            android:textSize="15dp"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_restbp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your Blood Pressure.."
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Cholesterol -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cholesterol"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_chol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your cholesterol(in mg/dl).."
+                            android:paddingLeft="10dp"
+                            android:inputType="numberDecimal" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Fasting Blood Sugar -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fasting Blood Sugar"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fasting Blood Sugar is measured while you're\non a fast for atleast 8-9 hours, and is measured\nin mg/dl.\n\nIf its greater than 120, click Yes else No.\n"
+                            android:textSize="15dp"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fbs">
+
+                            <RadioButton
+                                android:id="@+id/rb_fbs_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Yes"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_fbs_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Resting ECG -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rest ECG"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rest ECG is measured by ECG test in a resting\nposition.\n\nType 0:\nshowing probable or definite left\nventricular hypertrophy by Estes' criteria.\n\nType 1:\nnormal\n\nType 2:\nhaving ST-T wave abnormality\n(T wave inversions and/or ST elevation\nor depression of > 0.05 mV)\n"
+                            android:textSize="15dp"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/restecg">
+
+                            <RadioButton
+                                android:id="@+id/rb_restecg0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Type 0"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_restecg1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Type 1"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_restecg2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Type 2"
+                                android:paddingLeft="10dp"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Max Heart Rate -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Max Heart Rate Marked"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_thalach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter counts of heart beats.."
+                            android:paddingLeft="10dp"
+                            android:inputType="numberDecimal" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Exercise induced angina -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Exercise induced angina"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/exang">
+
+                            <RadioButton
+                                android:id="@+id/rb_exang0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_exang1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Yes"
+                                android:paddingLeft="10dp"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ST depression induced -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ST depression induced by\nexercise relative to rest "
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_oldpeak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter data.. "
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Slope of peak exercise -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Slope of peak\nexercise ST segment "
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/slope">
+
+                            <RadioButton
+                                android:id="@+id/rb_slope0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Downsloping"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_slope1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Flat"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_slope2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Upsloping"
+                                android:paddingLeft="10dp"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- No. of major vessels colored by fluoroscopy -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="number of major vessels\n(0-3) colored by\nfluoroscopy "
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/ed_ca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter data.. "
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Thallium -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thallium"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="25dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/thal">
+
+                            <RadioButton
+                                android:id="@+id/rb_thal0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Unknown"
+                                android:paddingLeft="10dp"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_thal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Fixed Defect"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_thal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Normal"
+                                android:paddingLeft="10dp"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_thal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Reversible defect"
+                                android:paddingLeft="10dp"/>
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/predictbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="79dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Predict" />
+
+                    <Button
+                        android:id="@+id/resetbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="78dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reset" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Result TextView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#B9F5AF">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/result"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:layout_marginBottom="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" have CVDs in future."
+                            android:id="@+id/cvd"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Accuracy TextView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#B9F5AF">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/show_accuracy"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:layout_marginBottom="15dp"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
