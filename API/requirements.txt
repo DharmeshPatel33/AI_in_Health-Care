@@ -10,7 +10,7 @@ gunicorn==19.9.0
 h5py==2.9.0
 itsdangerous==1.1.0
 Jinja2==2.10
-joblib==0.13.0
+joblib==1.2.0
 Keras==2.2.4
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
